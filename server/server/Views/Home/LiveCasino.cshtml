@@ -1,0 +1,231 @@
+﻿@{
+    ViewBag.Title = "Live Casino";
+}
+
+@Html.Partial("_BannerGame")
+<div class="row mt++ hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 col-xs-12 center-block">
+                <div class="box box1 display-block text-center center-block">
+                    <h3>M PALACE</h3>
+                    <p>
+                        Real dealers, actions and wins!<br>
+                        1.000 of games to choos from.
+                    </p>
+                    <div class="box-img">
+                        <img src="~/Content/images/casino_box1.jpg" alt="ad" />
+                    </div>
+                    <a href="#">
+                        <img src="~/Content/images/playnow_redbtn.png" class="btn_action" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box box2 display-block text-center">
+                    <h3>ROYAL PALACE</h3>
+                    <p>
+                        Real dealers, actions and wins!<br>
+                        1.000 of games to choos from.
+                    </p>
+                    <div class="box-img">
+                        <img src="~/Content/images/slotsbox2.jpg" alt="ad" />
+                    </div>
+                    <a href="#">
+                        <img src="~/Content/images/choosegame_blkbtn.png" class="btn_action" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-12">
+                <div class="box box3 display-block text-center">
+                    <h3>MONTE CARLD</h3>
+                    <p>
+                        Real dealers, actions and wins!<br>
+                        1.000 of games to choos from.
+                    </p>
+                    <div class="box-img">
+                        <img src="~/Content/images/roulettebox3.jpg" alt="ad" />
+                    </div>
+                    <a href="#">
+                        <img src="~/Content/images/takeaspin_yellowbtn.png" class="btn_action" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="col-md-3  col-sm-6 col-xs-12">
+                <div class="box box4 display-block text-center">
+                    <h3>CROWN PALACE</h3>
+                    <p>
+                        Real dealers, actions and wins!<br>
+                        1.000 of games to choos from.
+                    </p>
+                    <div class="box-img">
+                        <img src="~/Content/images/pokerbox4.jpg" alt="ad" />
+                    </div>
+                    <a href="#">
+                        <img src="~/Content/images/jointable_yellowbtn.png" class="btn_action" />
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="col-md-12 sub-menu mt">
+        <h3 class="text-uppercase  padding-12 pull-left2 m0">royal palace</h3>
+        <div class="game-tags pull-right2 pt-8">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter="all">All</button>
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter=".tag01">Bitme Hall</button>
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter=".tag02">International Hall</button>
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter=".tag03">Flagship Hall</button>
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter=".tag03">Multi Hall</button>
+                <button type="button" class="btn btn-fillter filter text-capitalize" data-filter=".tag03">Vip Hall</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row hidden">
+    <div class="col-md-12">
+        <!--<div class="game-tags mv">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter="all">All</button>
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter=".tag01">Bitme Hall</button>
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter=".tag02">International Hall</button>
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter=".tag03">Flagship Hall</button>
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter=".tag03">Multi Hall</button>
+                <button type="button" class="btn btn-default filter text-capitalize" data-filter=".tag03">Vip Hall</button>
+            </div>
+        </div>-->
+        <div class="game-preview mb mh0">
+            <div class="row">
+                <div class="col-md-2 game-thumbnail mix tag01">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag03">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag02">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag01">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag02">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag02">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag03">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag01">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag02">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+                <div class="col-md-2 game-thumbnail mix tag03">
+                    <a href="#"><img src="~/Content/images/game-thumbnail.jpg" /></a>
+                    <div class="game-sub-detail">
+                        <a href="/Home/GameDetail" class="game-info">game name</a>
+                        <a href="#" class="btn btn-sm btn-success btn-play">play now</a>
+                    </div>
+                    <div class="sub-opacity"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container mt+ mb+">
+    <div class="row">
+		<div class="col-md-3 live-casino p0">
+			<img src="../../Content/images/casino-game.jpg" alt="" class="img-responsive" />
+			<div class="casino-title">m palace</div>
+		</div>
+		<div class="col-md-3 live-casino p0 active">
+			<img src="../../Content/images/casino-game.jpg" alt="" class="img-responsive" />
+			<div class="casino-title">royal palace</div>
+		</div>
+		<div class="col-md-3 live-casino p0">
+			<img src="../../Content/images/casino-game.jpg" alt="" class="img-responsive" />
+			<div class="casino-title">monte carlo</div>
+		</div>
+		<div class="col-md-3 live-casino p0">
+			<img src="../../Content/images/casino-game.jpg" alt="" class="img-responsive" />
+			<div class="casino-title">crown palace</div>
+		</div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 p0">
+			<h3 class="casino-title-group">royal palace</h3>            
+        </div>
+        @for (int i = 0; i < 12; i++)
+        {
+            <div class="col-md-3 live-casino-child">
+                <img src="../../Content/images/casino-game.jpg" alt="" class="img-responsive" />
+                <div class="casino-title-child">
+					<a href='/Home/GameDetail'>royal palace</a>
+				</div>
+            </div>
+        }
+    </div>
+
+</div>
+
+
+
+<div class="row">
+    @Html.Partial("_PromotionBarGame")
+</div>

@@ -1,0 +1,226 @@
+﻿@{
+    ViewBag.Title = "Games";
+}
+@Html.Partial("_BannerGame")
+
+<!-- backup -->
+<div class="row hidden">
+    <div class="col-md-12">
+        <div class="games"></div>
+    </div>
+    <div class="col-md-12 text-center mt">
+        <button class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Guide Playboy Multi Player</button>
+        <button class="btn btn-lg btn-primary"><span class="glyphicon glyphicon-flash"></span> Play Playboy Multi Player</button>
+    </div>
+    <div class="col-md-12">
+        <div class="btn-group btn-group-justified mv games-tag" role="group" aria-label="...">
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter="all">All</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter=".game-top">Top Games</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter=".game-top, .game-3d">3D Slots</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter=".game-classic">classic slots</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter=".game-table">table games</button>
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" class="btn btn-default text-uppercase filter" data-filter=".game-other">others</button>
+            </div>
+        </div>
+        <div class="row games-all">
+            @for (int i = 0; i < 4; i++)
+            {
+            <div class="col-xs-4 col-md-4 text-center pv flipper-container mix game-top game-3d">
+                <div class="flipper clearfix">
+                    <div class="front">
+                        <img src="~/Content/images/coin.jpg" alt="" class="img-responsive" />
+                        <div class="game-name">Game name</div>
+                        <div class="game-name-opacity"></div>
+                    </div>
+                    <div class="back">
+                        <img src="~/Content/images/3DBaccarat1.png" alt="" class="img-responsive" />
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <a class="btn btn-danger">Try</a>
+                            <a class="btn btn-success">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+            @for (int i = 0; i < 4; i++)
+            {
+            <div class="col-xs-3 col-md-2 text-center pv flipper-container mix game-classic">
+                <div class="flipper clearfix">
+                    <div class="front">
+                        <img src="~/Content/images/coin.jpg" alt="" class="img-responsive" />
+                        <div class="game-name">Game name</div>
+                        <div class="game-name-opacity"></div>
+                    </div>
+                    <div class="back">
+                        <img src="~/Content/images/3DBaccarat1.png" alt="" class="img-responsive" />
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <a class="btn btn-danger">Try</a>
+                            <a class="btn btn-success">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+            @for (int i = 0; i < 4; i++)
+            {
+            <div class="col-xs-3 col-md-2 text-center pv flipper-container mix game-table">
+                <div class="flipper clearfix">
+                    <div class="front">
+                        <img src="~/Content/images/coin.jpg" alt="" class="img-responsive" />
+                        <div class="game-name">Game name</div>
+                        <div class="game-name-opacity"></div>
+                    </div>
+                    <div class="back">
+                        <img src="~/Content/images/3DBaccarat1.png" alt="" class="img-responsive" />
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <a class="btn btn-danger">Try</a>
+                            <a class="btn btn-success">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+
+            @for (int i = 0; i < 4; i++)
+            {
+            <div class="col-xs-3 col-md-2 text-center pv flipper-container mix game-other">
+                <div class="flipper clearfix">
+                    <div class="front">
+                        <img src="~/Content/images/coin.jpg" alt="" class="img-responsive" />
+                        <div class="game-name">Game name</div>
+                        <div class="game-name-opacity"></div>
+                    </div>
+                    <div class="back">
+                        <img src="~/Content/images/3DBaccarat1.png" alt="" class="img-responsive" />
+                        <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                            <a class="btn btn-danger">Try</a>
+                            <a class="btn btn-success">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+</div>
+
+<!-- test version -->
+<div class="row no-gutter hidden">
+    <div class="col-md-12">
+        <div class="games"></div>
+    </div>
+    <div class="col-md-12">
+        <div class="container">
+            <div class="row no-gutter">
+                <div class="col-md-12">
+                    <div class="row game-menu-container">
+                        <ul class="game-menu clearfix">
+                            <li><a href="#">top game</a></li>
+                            <li><a href="#">top game</a></li>
+                            <li><a href="#">top game</a></li>
+                            <li><a href="#">top game</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="row no-gutter2 game-list">
+                        @for (int i = 0; i < 12; i++)
+                        {
+                        <div class="col-md-2 col-sm-3 col-xs-6">
+                            <div class="game-img">
+                                <img src="~/Content/images/casino-game.jpg" alt="" />
+                                <div>Game name</div>
+                            </div>
+                            <div>
+                                <div class="btn-group">
+                                    <button class="btn btn-primary">Chơi thử</button>
+                                    <button class="btn btn-primary">Chơi thật</button>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- official version -->
+<div class="row no-gutter mt30">
+    
+    <div class="col-md-12">
+        <div class="container ">
+            <div class="row game-menu-container ">
+                <!-- Nav tabs -->
+                <ul class="nav nav-pills game-menu mt" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Top Trend Gaming</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Playtech</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                            <div class="row no-gutter2 game-list">
+                                @for (int i = 0; i < 12; i++)
+                                {
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="game-img">
+                                            <img src="~/Content/images/casino-game.jpg" alt="" />
+                                            <div>Game name</div>
+                                        </div>
+                                        <div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary">Chơi thử</button>
+                                                <button class="btn btn-primary">Chơi thật</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">
+                            <div class="row no-gutter2 game-list">
+                                @for (int i = 0; i < 6; i++)
+                                {
+                                    <div class="col-md-3 col-sm-4 col-xs-6">
+                                        <div class="game-img">
+                                            <img src="~/Content/images/casino-game.jpg" alt="" />
+                                            <div>Game name</div>
+                                        </div>
+                                        <div>
+                                            <div class="btn-group">
+                                                <button class="btn btn-primary">Chơi thử</button>
+                                                <button class="btn btn-primary">Chơi thật</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="row">
+@Html.Partial("_PromotionBarGame")
+</div>

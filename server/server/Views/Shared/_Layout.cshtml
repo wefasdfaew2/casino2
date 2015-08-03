@@ -1,0 +1,204 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <title>@ViewBag.Title | BET98</title>
+
+    <link rel="canonical" href="#">
+    <meta name="keywords" content="casino, bet">
+    <meta name="description" content="casino online">
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/Content/animate.css" rel="stylesheet" />
+    <link href="~/Content/box-model.css" rel="stylesheet" />
+    <link href="~/Content/styles.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+    <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <header class="container-fluid">
+        <div class="head-top row">
+            <div class="container">
+                <div class="col-md-6 top-support pv-">
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Information"><span class="glyphicon glyphicon-info-sign"></span></a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="FAQ"><span class="glyphicon glyphicon-question-sign"></span></a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Online"><span class="glyphicon glyphicon-play"></span></a>
+                    <a href="/InfoCenter/Index" data-toggle="tooltip" data-placement="bottom" title="Support"><span class="glyphicon glyphicon-flash"></span></a>
+                    <a href="#" data-toggle="tooltip" data-placement="bottom" title="Download"><span class="glyphicon glyphicon-download"></span></a>
+                </div>
+                <div class="col-md-6 top-login text-right mt">
+                    <div class="form-inline">
+                        <div class="form-group form-group-sm">
+                            <label class="sr-only">username</label>
+                            <input type="text" placeholder="Username" class="form-control" />
+                        </div>
+
+                        <div class="form-group form-group-sm">
+                            <label class="sr-only">password</label>
+                            <input type="password" placeholder="Password" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <button class="btn btn-sm btn-default">Login</button>
+                            <a href="/Registration/ForgotPassword" data-toggle="tooltip" data-placement="bottom" title="Forgot Password" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-lock"></span></a>
+                            <a href="/Registration/Index" data-toggle="tooltip" data-placement="bottom" title="Register" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-user"></span></a>
+                        </div>
+                    </div>
+                    <div class="visible-sm text-danger text-center"></div>
+                </div>
+            </div>
+        </div>
+        <div class="head">
+            <div class="head-logo row pv">
+                <div class="container">
+                    <div class="col-md-4 col-lg-4 col-lg-offset-4">
+                        <a href="/Home/Index" class="logo center-block ">
+                            <img src="~/Content/images/logo-bet98.png" class="img-responsive center-block" alt="logo" />
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-md-4 text-right hidden-xs hidden-sm">
+                        <div class="p- hidden-xs hidden-sm"></div>
+                        <ul class="list-inline list-unstyled m0 pt-">
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="like on facebook"><span class="fa fa-2x fa-facebook-square"></span></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="follow on twitter"><span class="fa fa-2x fa-twitter-square"></span></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="follow on google plus"><span class="fa fa-2x fa-google-plus-square"></span></a></li>
+                            <li><a href="#" data-toggle="tooltip" data-placement="top" title="subscribe youtube"><span class="fa fa-2x fa-youtube-square"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="leb" class="hidden-xs hidden-sm">
+                    <img src="~/Content/images/leaf.png" />
+                </div>
+            </div>
+
+            <div class="head-menu row">
+                <div class="container">
+                    <div class="row no-gutter-sm">
+                        <div class="col-md-1 left_reb hidden-sm hidden-xs">
+                            <img src="~/Content/images/left_reb.png" />
+                        </div>
+                        <div class="col-md-10 center-menu">
+                            <button class="btn btn-toggle-menu p+ display-block">Bet98 <span class="pull-right glyphicon glyphicon-menu-up"></span></button>
+                            @Html.Partial("_Menu")
+                        </div>
+                        <div class="col-md-1 right_leb hidden-sm hidden-xs">
+                            <img src="~/Content/images/right_reab.png" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+    <main class="container-fluid">
+        @RenderBody()
+        
+    </main>
+    
+       
+ 
+    <footer class="container-fluid">
+        <div class="row footer-links">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3 left-footer hidden-xs">
+                        <div class="promotion-footer">
+                            <div class="logo-footer">
+                                @{
+                                    switch ((string)ViewBag.Title)
+                                    {
+                                        case "Sportsbook":
+                                            <img src="~/Content/images/footer-thethao.png" />
+                                            break;
+                                        case "Live Casino":
+                                        <img src="~/Content/images/footer-casino.png" />
+                                            break;
+                                        case "Games":
+                                        <img src="~/Content/images/footer-game.png" />
+                                            break;
+                                        case "Promotion":
+                                        <img src="~/Content/images/footer-KM.png" />
+                                            break;
+                                        case "Help":
+                                        <img src="~/Content/images/footer-huongdan.png" />
+                                            break;
+                                        default:
+                                        <img src="~/Content/images/footer-home.png" />
+                                            break;
+                                    }
+                                }
+                            </div>
+                            <div class="copyright">
+                                Rights reserved, 2015
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 col-xs-6 text-right">
+                        <h3><a href="#" class="text-white">Fun89</a></h3>
+                        <ul class="list-unstyled footer-menu">
+                            <li><a href="#">Responsible Gambling</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Disclaimer</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Rules and Regulation</a></li>
+                            <li><a href="#">Sitemap</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3 col-xs-6">
+                        <h3><a href="#" class="text-white">Contact</a></h3>
+                        <ul class="list-unstyled footer-menu footer-menu-r">
+                            <li>
+                                <a href="#">Licenses</a>
+                                <ul>
+                                    <li><a href="#"><img src="~/Content/images/iomgambling.png" /></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Payment</a>
+                                <ul>
+                                    <li><a href="#"><img src="~/Content/images/visa.png" /></a></li>
+                                    <li><a href="#"><img src="~/Content/images/mastercard.png" /></a></li>
+                                    <li><a href="#"><img src="~/Content/images/unionpay.png" /></a></li>
+                                    <li><a href="#"><img src="~/Content/images/fastbank.png" /></a></li>
+                                    <li><a href="#"><img src="~/Content/images/bankwire.png" /></a></li>
+                                    <li><a href="#"><img src="~/Content/images/skrill.png" /></a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Security</a>
+                                <ul>
+                                    <li><a href="#"><img src="~/Content/images/iovation-3.png" /></a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </div>
+            <!--<div class="row footer-partners"></div>-->
+            <div class="footer-info text-center pv small">
+                <div class="col-lg-offset-2 col-xs-offset-0">
+                    FUN88 belongs to WELTON HOLDINGS LTD. Regulated & Licensed by Isle of Man Gaming Supervision Commission. Copyright © 2015 FUN88.<br />
+                    Suite 8/9, West House, West Street, Ramsey. Isle of Man IM8 1AE Regulated & Licensed (17/07/2009) by Isle of Man, British Isles.
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/Scripts/jquery-1.11.3.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script src="~/Scripts/jquery.mixitup.min.js"></script>
+    <script src="~/Scripts/app.js"></script>
+
+</body>
+</html>

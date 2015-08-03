@@ -1,0 +1,192 @@
+﻿@{
+	ViewBag.Title = "Promotion";
+}
+
+<div class="row">
+	<div class="col-md-12">
+		<!-- Nav tabs -->
+		<ul class="nav nav-pills nav-justified mt+ nav-gold" role="tablist">
+			<li role="presentation" class="active"><a href="#all-promo" aria-controls="home" role="tab" data-toggle="tab">All</a></li>
+			<li role="presentation"><a href="#sportsbook-promo" aria-controls="profile" role="tab" data-toggle="tab">Sportsbook</a></li>
+			<li role="presentation"><a href="#livecasino-promo" aria-controls="messages" role="tab" data-toggle="tab">Live Casino</a></li>
+			<li role="presentation"><a href="#games-promo" aria-controls="settings" role="tab" data-toggle="tab">Games</a></li>
+			<li role="presentation"><a href="#daily-promo" aria-controls="settings" role="tab" data-toggle="tab">Daily Promotion</a></li>
+			<li role="presentation"><a href="#other-promo" aria-controls="settings" role="tab" data-toggle="tab">Others</a></li>
+		</ul>
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div role="tabpanel" class="tab-pane active p border-red2" id="all-promo">
+				@for (int i = 0; i < 8; i++)
+				{
+					<div class="row card mh0 pv mb">
+						<div class="col-md-2">
+							<img src="~/Content/images/promo.jpg" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+							<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+						</div>
+						<div class="col-md-2">
+							<div class="p++ hidden-xs hidden-sm"></div>
+							<button class="btn-block btn btn-primary text-uppercase">register now</button>
+							<button class="btn-block btn btn-info text-uppercase btn-promo-detail">more</button>
+						</div>
+						<div class="col-md-2">
+
+						</div>
+						<div class="col-md-12 promo-detail">
+							<ol>
+								<li>
+									Chương trình khuyến mãi bắt đầu từ ngày 01/07/2015 (00:00 giờ GMT+8) đến 31/07/2015 (23:59 giờ GMT+8). Chương trình khuyến mãi này áp dụng cho 500 thành viên chơi với tiền VND và chưa từng tham gia Tiền Thưởng Đăng Ký Trò Chơi trước đó.
+								</li>
+								<li>
+									Thành viên sẽ nhận được 100% Tiền Thưởng lên đến 5.000.000 VND.
+								</li>
+								<li>
+									Tiền thưởng sẽ được cập nhật vào tài khoản khi doanh thu đặt cược tại Trò Chơi gấp 20 lần tiền thưởng cộng tiền gửi.
+									<p>
+										Ví dụ:<br />
+										Tiền gửi = 1.000.000 VND<br />
+										Tiền thưởng = 100% x 1.000.000 VND = 1.000.000 VND<br />
+										Doanh thu yêu cầu = (1.000.000 VND + 1.000.000 VND) x 20 = 40.00.000 VND
+									</p>
+								</li>
+								<li>
+									Tiền gửi tối thiểu để nhận thưởng là 200.000 đồng.
+								</li>
+								<li>
+									Để nhận tiền thưởng, thành viên cần gửi tiền hoặc chuyển tiền vào tài khoản Trò Chơi và nhấn chọn 100% Tiền Thưởng Đăng Ký Trò Chơi. Tiền thưởng sẽ tạm thời khóa lại và sẽ cập nhật khi doanh thu đặt cược tại Trò Chơi gấp 20 lần tiền gửi cộng tiền thưởng. Bạn sẽ nhận được thông báo khi đáp ứng đủ yêu cầu doanh thu đặt cược.
+								</li>
+								<li>
+									Nếu doanh thu yêu cầu cho khuyến mãi này không được đáp ứng trong vòng 30 ngày kể từ ngày nhận thưởng, tiền thưởng sẽ bị hủy bỏ.
+								</li>
+								<li>
+									Doanh thu tại Table Games không được áp dụng cho khuyến mãi này.
+								</li>
+								<li>
+									Chiến thắng jackpot hợp lệ là chiến thắng sử dụng tiền gửi của thành viên. Trường hợp thành viên thắng jackpot từ các cược sử dụng tiền thưởng chào mừng hoặc vòng quay miễn phí nhận được từ Fun88, thì toàn bộ số tiền thắng jackpot sẽ được quyên góp cho chương trình Angel's Care.
+								</li>
+								<li>
+									Điều Khoản và Điều Kiện Chung của Fun88 sẽ được áp dụng cho chương trình khuyến mãi này.
+								</li>
+							</ol>
+							<div class="ph++ clearfix">
+								<button class="btn  btn-danger btn-promo-detail pull-right" data-toggle="tooltip" data-placement="left" title="close detail"><span class="glyphicon glyphicon-menu-up"></span></button>
+							</div>
+						</div>
+					</div>
+				}
+			</div>
+			<div role="tabpanel" class="tab-pane p" id="sportsbook-promo">
+				@for (int i = 0; i < 3; i++)
+				{
+					<div class="row card mh0 pv mb">
+						<div class="col-md-2">
+							<img src="~/Content/images/promo.jpg" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+							<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+						</div>
+						<div class="col-md-2">
+							<div class="p++ hidden-xs hidden-sm"></div>
+							<button class="btn-block btn btn-primary text-uppercase">register now</button>
+							<button class="btn-block btn btn-info text-uppercase">more</button>
+						</div>
+						<div class="col-md-2">
+
+						</div>
+					</div>
+				}
+			</div>
+			<div role="tabpanel" class="tab-pane p" id="livecasino-promo">
+@for (int i = 0; i < 2; i++)
+{
+	<div class="row card mh0 pv mb">
+		<div class="col-md-2">
+			<img src="~/Content/images/promo.jpg" />
+		</div>
+		<div class="col-md-6">
+			<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+			<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+		</div>
+		<div class="col-md-2">
+			<div class="p++ hidden-xs hidden-sm"></div>
+			<button class="btn-block btn btn-primary text-uppercase">register now</button>
+			<button class="btn-block btn btn-info text-uppercase">more</button>
+		</div>
+		<div class="col-md-2">
+
+		</div>
+	</div>
+}
+			</div>
+			<div role="tabpanel" class="tab-pane p" id="games-promo">
+				@for (int i = 0; i < 4; i++)
+				{
+					<div class="row card mh0 pv mb">
+						<div class="col-md-2">
+							<img src="~/Content/images/promo.jpg" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+							<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+						</div>
+						<div class="col-md-2">
+							<div class="p++ hidden-xs hidden-sm"></div>
+							<button class="btn-block btn btn-primary text-uppercase">register now</button>
+							<button class="btn-block btn btn-info text-uppercase">more</button>
+						</div>
+						<div class="col-md-2">
+
+						</div>
+					</div>
+				}
+			</div>
+			<div role="tabpanel" class="tab-pane p" id="daily-promo">
+				@for (int i = 0; i < 3; i++)
+				{
+					<div class="row card mh0 pv mb">
+						<div class="col-md-2">
+							<img src="~/Content/images/promo.jpg" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+							<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+						</div>
+						<div class="col-md-2">
+							<div class="p++ hidden-xs hidden-sm"></div>
+							<button class="btn-block btn btn-primary text-uppercase">register now</button>
+							<button class="btn-block btn btn-info text-uppercase">more</button>
+						</div>
+						<div class="col-md-2">
+
+						</div>
+					</div>
+				}
+			</div>
+			<div role="tabpanel" class="tab-pane p" id="other-promo">
+				@for (int i = 0; i < 1; i++)
+				{
+					<div class="row card mh0 pv mb">
+						<div class="col-md-2">
+							<img src="~/Content/images/promo.jpg" />
+						</div>
+						<div class="col-md-6">
+							<h2 class="text-uppercase text-danger">CHỈ CÓ TẠI FUN88!<br />THƯỞNG CHÀO MỪNG THÀNH VIÊN MỚI!</h2>
+							<div class="text-uppercase sub-title-promo">NHẬN ĐẾN 788,000 VNĐ FREEBETS VÀ 30 FREE SPINS KHI ĐĂNG KÝ GỬI TIỀN VÀ CƯỢC TRONG THÁNG 7!</div>
+						</div>
+						<div class="col-md-2">
+							<div class="p++ hidden-xs hidden-sm"></div>
+							<button class="btn-block btn btn-primary text-uppercase">register now</button>
+							<button class="btn-block btn btn-info text-uppercase">more</button>
+						</div>
+						<div class="col-md-2">
+
+						</div>
+					</div>
+				}
+			</div>
+		</div>
+	</div>
+</div>
